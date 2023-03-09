@@ -12,11 +12,5 @@ namespace OpenMind.WebApi.Controllers.V2
         {
             return Ok("All questions retrieved by V2.");
         }
-
-        [HttpGet("{questionId}/answers")]
-        public async Task<ActionResult<string>> GetAnswers(int questionId)
-        {
-            return Ok($"All answers for question {questionId} retrieved.");
-        }
     }
 }
